@@ -1,8 +1,8 @@
 def cipher(array, shift)
 	temp = []
-	bytes = array.unpack('c*') 					 # Convert chars to binary
+	bytes = array.unpack('c*')	# Convert chars to binary
 	bytes.each { |i| temp << i + shift } # Increment binary by shift
-	result = temp.pack('c*')						 # Convert binary back to chars
+	result = temp.pack('c*')	# Convert binary back to chars
 	puts result
 end
 
